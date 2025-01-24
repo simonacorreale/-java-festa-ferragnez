@@ -14,12 +14,20 @@ Buon lavoro e buon weekend! :slightly_smiling_face: :tada:
 Lista invitati:
 Dua Lipa, Paris Hilton, Manuel Agnelli, J-Ax, Francesco Totti, Ilary Blasi, Bebe Vio, Luis, Pardis Zarei, Martina Maccherone, Rachel Zeilic
  */
+
+import java.util.Scanner;
+
 public class CheckGuest{
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        
-        
+        String[] guestArray = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Inserisci il nome del tuo invitato:");
+        String myNameString = scanner.nextLine();
+        System.out.println(myNameString);
+        
+        int guestNumber = guestArray.length;
+        System.out.println(guestNumber);
     }
 }
