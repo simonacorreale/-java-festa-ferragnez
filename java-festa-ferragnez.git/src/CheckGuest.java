@@ -44,6 +44,20 @@ public class CheckGuest {
             }
         }
         
+
+        // Altra soluzione trovata
+        /* 
+         *  -> Qui semplicemente ho provato ad usare un for-each creando una variabile di tipo stringa chiamata "guestName" all'interno della condizione e semplicemente ho inserito il cambio condizione da falso a vero dentro l'if presente nel for (documentazione: https://www.w3schools.com/java/java_foreach_loop.asp).
+                
+                boolean userValid = false;
+                for (String guestName : guestArray) {
+                if (guestName.equalsIgnoreCase(myNameGuest)) {
+                userValid = true; 
+                break; 
+            }
+        }
+         */
+
         // Stampo il messaggio corrispondente alla condizione che ho segnalato sopra
         if (userValid) {// la condizione "userValid è stata soddisfatta nel for sopra e se risulta true il messaggio viene stampato"
             System.out.println("Benvenuto alla festa, " + myNameGuest + "!!!");
