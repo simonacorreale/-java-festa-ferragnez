@@ -60,9 +60,10 @@ public class CheckGuest {
 
         // Stampo il messaggio corrispondente alla condizione che ho segnalato sopra
         if (userValid) {// la condizione "userValid è stata soddisfatta nel for sopra e se risulta true il messaggio viene stampato"
-            System.out.println("Benvenuto alla festa, " + myNameGuest + "!!!");
+            System.out.println("Benvenut* alla festa, " + myNameGuest + "!!!");
         } else {//viceversa se il messaggio nella condizione for superiore risulta non presente, semplicemente l'utente non entra :(
-            System.out.println("Mi dispiace sono desolato che tu abbia fatto tutta questa strada :(, " + myNameGuest + ". Non sei sulla lista degli invitati, BUTTAFUORIIIIIII, QUALCUNO CHIAMI IL BUTTAFUORIIIIIIIIIII!!!!!");
+            System.out.println("Mi dispiace sono desolato che tu abbia fatto tutta questa strada :(, " + myNameGuest + ". Non sei sulla lista degli invitati, Marraaa chiama il BUTTAFUORIIIIIII, QUALCUNO CHIAMI IL BUTTAFUORIIIIIIIIIII!!!!!");
         }
     }
 }
+// fine
