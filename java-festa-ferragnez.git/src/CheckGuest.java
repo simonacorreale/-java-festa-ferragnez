@@ -44,7 +44,6 @@ public class CheckGuest {
             }
         }
         
-
         // Altra soluzione trovata
         /* 
          *  -> Qui semplicemente ho provato ad usare un for-each creando una variabile di tipo stringa chiamata "guestName" all'interno della condizione e semplicemente ho inserito il cambio condizione da falso a vero dentro l'if presente nel for (documentazione: https://www.w3schools.com/java/java_foreach_loop.asp).
@@ -56,8 +55,27 @@ public class CheckGuest {
                 break; 
             }
         }
-         */
+        ____WHILE_____
+        ____https://www.w3schools.com/java/java_while_loop.asp___
 
+        boolean userValid = false;
+
+        Iniziamo a controllare ogni nome nell'array, quindi partiamo da
+        int i = 0;
+
+        While (i < guestArray.length) { <--uso la condizione che semplicemente inserendo l'operatore di confronto minore faccio un controllo che tradotto è "l'indice è inferiore alla lunghezza dell'array";
+        
+        if (guestArray[i].equals(myNameGuest)){
+        userValid = true;
+        
+        Break
+
+        }
+         i++;
+        }
+        ____WHILE_____
+
+         */
         // Stampo il messaggio corrispondente alla condizione che ho segnalato sopra
         if (userValid) {// la condizione "userValid è stata soddisfatta nel for sopra e se risulta true il messaggio viene stampato"
             System.out.println("Benvenut* alla festa, " + myNameGuest + "!!!");
